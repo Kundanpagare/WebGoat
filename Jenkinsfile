@@ -12,7 +12,7 @@ pipeline {
     		}
             stage ('Check Secrets') {
      			steps {
- 			    sh 'trufflehog3 https://github.com/kaleanushka123/Infra-secops.git -f json -o truffelhog_output.json || true'
+ 			    sh 'trufflehog3  -f json -o truffelhog_output.json || true'
  			      
 			}
     		}
